@@ -1,12 +1,12 @@
 #!bin/bash
 
-if [[ -f "/workspaces/frappe_codespace/frappe-bench/apps/frappe" ]]
+if [[ -f "/workspaces/frappe_codespace_pg/frappe-bench/apps/frappe" ]]
 then
     echo "Bench already exists, skipping init"
     exit 0
 fi
 
-rm -rf /workspaces/frappe_codespace/.git 
+rm -rf /workspaces/frappe_codespace_pg/.git 
 
 bench init \
 --ignore-exist \
